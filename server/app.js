@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const graphqlHTTP = require("express-graphql");
 const schema = require("./schema/schema");
@@ -5,8 +6,15 @@ const mongoose = require("mongoose");
 
 const app = express();
 
+let USER_DB = process.env.USER_MONGO_DB;
+let PASS_DB = process.env.PASS_MONGO_DB;
+
 mongoose.connect(
-  "mongodb+srv://felipemuner:pelife11@cluster0-h8s0x.mongodb.net/test?retryWrites=true&w=majority"
+  "mongodb+srv://" +
+    `${USER_DB}` +
+    ":" +
+    `${PASS_DB}` +
+    "@cluster0-h8s0x.mongodb.net/test?retryWrites=true&w=majority"
 );
 mongoose.connection.once("open", () => {
   console.log("to aqui");
