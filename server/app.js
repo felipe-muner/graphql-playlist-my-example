@@ -3,8 +3,11 @@ const express = require("express");
 const graphqlHTTP = require("express-graphql");
 const schema = require("./schema/schema");
 const mongoose = require("mongoose");
+const cors = require('cors');
 
 const app = express();
+
+app.use(cors())
 
 let USER_DB = process.env.USER_MONGO_DB;
 let PASS_DB = process.env.PASS_MONGO_DB;
