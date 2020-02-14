@@ -40,6 +40,7 @@ const getBookQuery = gql`
         books {
           id
           name
+          genre
         }
       }
     }
