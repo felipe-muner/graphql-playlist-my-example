@@ -1,0 +1,48 @@
+mutation {
+  addAuthor(name: "Fyodor Dostoyevsky", age:59) {
+    id
+  }  
+}
+mutation{
+  addAuthor(name:"Stephen King", age:72) {
+    id
+  }
+}
+
+mutation {
+  addAuthor(name:"J. K. Rowling", age:54) {
+    id
+  }
+}
+
+
+Stephen King
+It - Horror
+The Shining - Horror
+Outsider - Mystery
+-
+George R. R. Martin
+Game of Thrones - Fantasy
+The Winds of Winter - Fantasy
+Nightflyers - Science fiction
+-
+Charles Bukowski
+Women - Autobiographical novel
+Ham on Rye - Autobiographical novel
+Pulp - Detective fiction
+-
+Fyodor Dostoyevsky
+Crime and Punishment - Psychological fiction
+The Brothers Karamazov - Philosophical fiction
+Notes from Underground -
+-
+J. K. Rowling
+Harry Potter and the Philosopher's Stone - Fantasy
+Lethal White - Mistery
+The Casual Vacancy - Tragicomedy
+
+
+
+
+
+
